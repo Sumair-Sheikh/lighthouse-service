@@ -1,0 +1,36 @@
+.heading h3 {
+    font-size: 32px;
+    font-weight: 500;
+    font-family: Thinking Of Betty;
+    color: #82d4f6 !important;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.heading h2 {
+    font-size: 32px !important;
+    font-family: Montserrat !important;
+    font-weight: 600 !important;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #004262 !important;
+    text-align: center;
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.heading h2:after {
+    content: "";
+    position: absolute;
+    width: 75%;
+    height: 20px;
+    background: #7bbbd7;
+    bottom: 0;
+    left: 0px;
+    opacity: 0.7;
+    z-index: -1;
+    right: 0;
+    margin: auto;
+}

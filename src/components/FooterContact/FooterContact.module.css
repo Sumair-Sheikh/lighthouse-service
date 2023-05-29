@@ -1,0 +1,41 @@
+.footer-contact {
+    margin-top: 144px;
+    padding: 0px 0px 32px 0px;
+}
+
+.footer-contact .left {
+    margin: 0px 30px 0px 0px;
+}
+
+.footer-contact .left img {
+    width: 100%;
+}
+
+.footer-contact .right {
+    margin: 0px 0px 0px 30px;
+}
+
+.footer-contact h2:after {
+    content: "";
+    position: absolute;
+    width: 310px;
+    height: 20px;
+    background: #7bbbd7;
+    bottom: 0;
+    left: 45px;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+.footer-contact .content p {
+    font-family: 'Montserrat', Sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+    color: #000000;
+    line-height: 26px;
+}
+
+.footer-foam {
+    margin-top: 64px;
+}

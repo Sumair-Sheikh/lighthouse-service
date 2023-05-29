@@ -1,0 +1,119 @@
+.main-services {
+    padding-top: 120px;
+	margin-bottom: -50px;
+}
+
+.main-services .row:nth-child(2n) {
+    flex-direction: row-reverse;
+	padding: 150px 10px 150px;
+	position: relative;
+}
+
+.main-services .row:nth-child(2n):before {
+    content: '';
+    position: absolute;
+    background-image: url(../../../public/images/ser-bg.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 110%;
+    height: 105%;
+    top: -30px;
+    left: -40px;
+    z-index: -1;
+}
+
+/* .main-services .content_service {
+	margin-left: auto;
+} */
+
+.main-services .content_service h1.title {
+    font-size: 32px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #004262;
+	position: relative;
+	width: fit-content;
+	margin-bottom: 50px;
+}
+
+.main-services .content_service h1.title:after {
+    content: '';
+    position: absolute;
+    width: 159px;
+    height: 22px;
+    background: #DBF4FF;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: -5px;
+    z-index: -1;
+}
+
+.main-services .content-p {
+    display: block;
+    max-width: 100%;
+    -webkit-line-clamp: unset;
+    -webkit-box-orient: unset;
+    overflow: unset;
+    padding-right: 40px;
+    margin-bottom: 105px;
+}
+
+.content_service .content-p p {
+    font-size: 14px;
+    font-family: "Montserrat";
+    font-weight: 400;
+    line-height: 30px;
+    color: black;
+}
+
+div.icon-box {
+    background: #004262;
+    width: 89px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    position: absolute;
+    top: 30px;
+    margin-left: auto;
+    left: 0px;
+
+}
+
+.image-col img {
+    border-radius: 30px;
+}
+
+.main-services img.first-img {
+    margin: auto 0 auto auto;
+    width: 95%;
+    height: 550px;
+    object-fit: cover;
+    display: block;
+}
+
+.main-services .row:nth-child(odd) .icon-box {
+    background: #82D4F6;
+}
+
+.main-services .row:nth-child(even) .content_service {
+    padding-left: 20px;
+}
+
+.main-services .row:nth-child(even) .content_service .content-p {
+    padding-right: 25px;
+}
+
+.main-services .row:nth-child(even) .icon-box {
+    left: auto;
+	right: 0;
+}
+
+.main-services .row:nth-child(even) img.first-img {
+    margin: auto auto auto 0;
+}

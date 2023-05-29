@@ -1,0 +1,138 @@
+.welcome-sec {
+    padding: 70px 0px 26px 0px;
+}
+
+.heading h3 {
+    font-size: 32px;
+    font-weight: 500;
+    font-family: Thinking Of Betty;
+    color: #82d4f6 !important;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.heading h2 {
+    font-size: 32px !important;
+    font-family: Montserrat !important;
+    font-weight: 600 !important;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #004262 !important;
+    text-align: center;
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.heading h2:after {
+    content: "";
+    position: absolute;
+    width: 310px;
+    height: 20px;
+    background: #7bbbd7;
+    bottom: 0;
+    left: 0px;
+    opacity: 0.7;
+    z-index: -1;
+    right: 0;
+    margin: auto;
+}
+
+.content {
+    padding: 30px 115px 0px 116px;
+}
+
+.content p {
+    font-family: "Montserrat", Sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #000000;
+    line-height: 26px;
+    text-align: center;
+}
+
+.welcome-box {
+    position: relative;
+    margin-top: 70px;
+    z-index: 1;
+}
+
+.main-mission {
+    background: white;
+    box-shadow: 1px 0px 5px 3px #756e6e52;
+    max-height: 215px;
+    min-height: 215px;
+    padding: 0px 10px 0px 28px;
+    position: relative;
+    border-radius: 20px;
+}
+
+.main-mission:after {
+    content: "";
+    position: absolute;
+    width: 91px;
+    background: #81d2f4;
+    height: 7px;
+    bottom: 0px;
+    border-radius: 7px;
+}
+
+.mission-inner {
+    position: relative;
+}
+
+.img-title {
+    display: grid;
+    grid-template-columns: 100px auto;
+    padding-bottom: 16px;
+    column-gap: 20px;
+    align-items: end;
+}
+
+.img-title span {
+    background: #004262;
+    width: 85px;
+    height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -24px;
+    border-radius: 31px;
+}
+
+.img-title img {
+    width: 35px;
+    height: auto;
+}
+
+.main-mission h4.title {
+    font-size: 18px;
+    font-family: "Montserrat";
+    color: black;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.content-sec p {
+    font-family: "Montserrat", Sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #7a7a7a;
+    line-height: 24px;
+}
+
+.main-mission:hover:after {
+    background: #004262 !important;
+    transition: 0.5s;
+}
+
+.main-mission:hover .img-title span {
+    background-image: linear-gradient(326deg, #004262 19%, #82d4f6 107%);
+    transition: 0.5s;
+}
+
+.main-mission:hover h4.title {
+    color: #82d4f6;
+    transition: 0.5s;
+}

@@ -1,0 +1,59 @@
+.home-we-ofer {
+    padding: 96px 0px 26px 0px;
+    position: relative;
+    z-index: 1;
+}
+
+.heading h3 {
+    font-size: 32px;
+    font-weight: 500;
+    font-family: Thinking Of Betty;
+    color: #82d4f6 !important;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.heading h2 {
+    font-size: 32px !important;
+    font-family: Montserrat !important;
+    font-weight: 600 !important;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #004262 !important;
+    text-align: center;
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.heading h2:after {
+    content: "";
+    position: absolute;
+    width: 147px;
+    height: 20px;
+    background: #7bbbd7;
+    bottom: 0;
+    left: 0px;
+    opacity: 0.7;
+    z-index: -1;
+    right: 0;
+    margin: auto;
+}
+
+.content {
+    padding: 50px 115px 0px 115px;
+}
+
+.content p {
+    font-family: "Montserrat", Sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #000000;
+    line-height: 26px;
+    text-align: center;
+}
+
+.tabs-sect {
+    margin-top: 128px;
+  }

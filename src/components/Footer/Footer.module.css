@@ -1,0 +1,143 @@
+#colophon {
+    clear: both;
+    background-image: url("../../../public/images/Vector-1-1.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    /* height: 388px; */
+    padding-top: 32px;
+}
+
+.footer {
+    padding-bottom: 40px;
+}
+
+.footer-logo {
+    background-color: white;
+    border-radius: 200px;
+    margin-left: 70px;
+}
+
+.footer .col-lg-5, .footer .col-lg-3 {
+    display: flex;
+    margin-top: 116px;
+}
+
+.footer2, .footer4 {
+    padding-top: 110px;
+}
+
+.footer2 h3, .footer4 h3 {
+    font-size: 18px;
+    font-family: "Montserrat";
+    color: #82d4f6;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 2em;
+}
+
+.footer2 ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-auto-flow: column;
+    margin-bottom: 0;
+    column-gap: 140px;
+}
+
+.footer2 ul li {
+    padding-bottom: 25px;
+}
+
+.footer2 ul li a {
+    font-size: 14px;
+    font-family: "Montserrat";
+    color: white;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+}
+
+.footer2 ul li a:hover {
+    color: #82d4f6;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+li.active a, .single-post .footer-menu li.our-blogs a {
+    position: relative;
+    color: #014363 !important;
+}
+
+ul.footer-contact-info li {
+    margin-bottom: 20px;
+}
+
+span.socail-footer {
+    color: #82d4f6;
+    font-size: 14px;
+    font-family: "Montserrat";
+    font-weight: 400;
+}
+
+ul.footer-contact-info a {
+    font-size: 14px;
+    font-family: "Montserrat";
+    color: white;
+    font-weight: 300;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+ul.footer-contact-info li a:hover {
+    color: #82d4f6;
+    transition: 0.5s;
+}
+
+.copyrights {
+    background: #82d4f6;
+    height: 60px;
+    padding-top: 22px;
+}
+
+p.copyright {
+    font-size: 14px;
+    font-family: "Montserrat";
+    font-weight: 400;
+    color: white;
+}
+
+a.fot-a {
+    color: #004262;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+a.fot-a:hover {
+    color: white !important;
+    transition: 0.5s;
+}
+
+.copyrights .social-icon-footer {
+    text-align: end;
+}
+
+.social-icon-footer ul {
+    margin: 0;
+    padding: 0;
+}
+
+.social-icon-footer ul li {
+    list-style: none;
+    display: inline-flex;
+}
+
+.social-icon-footer a {
+    margin-left: 26px;
+    color: white !important;
+}
+
+.social-icon-footer a:hover {
+    transition: 0.5s;
+    color: black !important;
+}

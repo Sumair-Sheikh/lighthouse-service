@@ -1,0 +1,140 @@
+.home-slider-sec {
+    position: relative;
+}
+
+.home-slider-sec:before {
+    content: "";
+    position: absolute;
+    width: 900px;
+    height: 650px;
+    background-image: url("..//..//..//..//public/images/Ellipse-30.png");
+    background-repeat: no-repeat;
+    right: 0;
+    top: -120px;
+}
+
+.home-slider-sec:after {
+    content: "";
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    background-image: url("..//..//..//..//public/images/Shape-2.png");
+    z-index: -1;
+    background-repeat: no-repeat;
+    top: 160px;
+}
+
+.home-bannner-slider {
+    height: 585px;
+    background-repeat: no-repeat;
+    background-position: center top;
+    border-radius: 32px;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    position: relative;
+    padding: 35px 0px 0px 70px;
+    width: 99%;
+    margin: 0 auto;
+}
+
+.home-bannner-slider .title h2.post_title {
+    font-size: 42px;
+    font-family: Thinking Of Betty;
+    color: white;
+    letter-spacing: 0.9px;
+    margin-left: 18px;
+    margin-bottom: 0px !important;
+    padding-bottom: 0px !important;
+}
+.sub-div h4.sub_title {
+    font-size: 52px;
+    font-family: Montserrat;
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    margin-bottom: 50px;
+    margin-top: 2px;
+    z-index: 1;
+}
+
+h4.sub_title:after {
+    content: "";
+    position: absolute;
+    width: 294px;
+    height: 20px;
+    background: #7bbbd7;
+    bottom: 0;
+    left: 35px;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+.home-bannner-slider .services-btn a {
+    background: white;
+    padding: 14px 30px 14px 30px;
+    border-radius: 30px;
+    font-family: Oxygen;
+    font-size: 14px;
+    color: #004262;
+    box-shadow: 0px 0px 1px 5px #82d4f6;
+    animation: pulse-animation 2s infinite;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.home-bannner-slider .services-btn a:hover {
+    background: #002435 !important;
+    transition: 0.5s;
+    color: white;
+}
+
+@keyframes pulse-animation {
+    0% {
+      box-shadow: 0 0 0 0px rgb(130, 212, 246);
+    }
+    100% {
+      box-shadow: 0 0 0 20px rgb(255 0 0 / 0%);
+    }
+  }
+
+.social-icon-header {
+    position: absolute;
+    top: 330px;
+    right: 20px;
+}
+
+.social-icon-header ul {
+    margin: 0;
+    padding: 0;
+}
+
+.social-icon-header ul li {
+    list-style: none;
+}
+
+.social-icon-header a:nth-child(1) {
+    position: relative;
+}
+
+.social-icon-header a svg {
+    margin-top: 10px !important;
+    color: #002435;
+}
+
+.social-icon-header a:nth-child(1):after {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 70px;
+    background: #002435;
+    top: -100px;
+    left: 7px;
+}
+
+.social-icon-header a:hover svg {
+    transition: 0.5s;
+    color: #82d4f6;
+}

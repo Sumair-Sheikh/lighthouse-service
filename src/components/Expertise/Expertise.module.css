@@ -1,0 +1,28 @@
+.about-expertise {
+    background-color: #EDFAFF;
+    padding: 150px 10px 80px;
+    margin-top: -50px;
+    clip-path: polygon(
+    20% 0%,
+    80% 0%,
+    100% 20%,
+    100% 100%,
+    80% 100%,
+    20% 100%,
+    0 100%,
+    0% 20%
+  );
+}
+
+.content {
+    padding: 30px 0px 0px;
+}
+
+.content p {
+    font-family: "Montserrat", Sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #000000;
+    line-height: 27px;
+    text-align: center;
+}
