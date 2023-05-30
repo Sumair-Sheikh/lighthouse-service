@@ -10,7 +10,7 @@ import { useRouter } from 'next/router';
 function BlogsSlider() {
 
     const router = useRouter()
-    console.log(router, "router")
+    // console.log(router, "router")
     const pathName = router.pathname
     const handleChangePost = (e, id) => {
         e.stopPropagation()
