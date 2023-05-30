@@ -8,7 +8,6 @@ import { useRouter } from 'next/router';
 function Blogs() {
     
     const router = useRouter()
-    // console.log(router, "router")
     const pathName = router.pathname
     const handleChangePost = (e, id) => {
         e.stopPropagation()
