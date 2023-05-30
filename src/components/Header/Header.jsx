@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import styles from '../Header/Header.module.css'
 import Navbar from '../Navbar/Navbar';
+import Link from 'next/link';
 
 function Header() {
 
@@ -13,7 +14,7 @@ function Header() {
         <div class="row">
           <div class="col-md-3">
             <div className={styles['site-branding']}>
-              <a href="/" rel="noopener noreferrer">
+              <Link href="/" rel="noopener noreferrer">
                 <Image
                   src="/images/Header-Logo.png"
                   alt="Vercel Logo"
@@ -22,7 +23,7 @@ function Header() {
                   height={202}
                   priority
                 />
-              </a>
+              </Link>
             </div>
           </div>
           <div class="col-md-9">

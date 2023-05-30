@@ -3,6 +3,7 @@ import Image from 'next/image'
 import styles from '../Footer/Footer.module.css'
 import SocialIcon from '../Social-icon/SocialIcon';
 import Navbar from '../Navbar/Navbar';
+import Link from 'next/link';
 
 function Footer() {
 
@@ -16,7 +17,7 @@ function Footer() {
             <div className="row">
               <div className="col-lg-4">
                 <div className={styles['footer-logo']}>
-                  <a href="/">
+                  <Link href="/">
                     <Image
                       src="/images/Logo-1.png"
                       alt="Vercel Logo"
@@ -24,7 +25,7 @@ function Footer() {
                       height={318}
                       priority
                     />
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="col-lg-5">
@@ -42,15 +43,15 @@ function Footer() {
                   <h3>Contact Us</h3>
                   <ul className={styles['footer-contact-info']}>
                     <li><span className={styles['socail-footer']}>Phone:</span>
-                      <a href="tel:123(4567)890"> 123(4567)890</a>
+                      <Link href="tel:123(4567)890"> 123(4567)890</Link>
 
                     </li>
                     <li><span className={styles['socail-footer']}>Email:</span>
-                      <a href="mailto:info@lighthouse@gmail.com">info@lighthouse@gmail.com</a>
+                      <Link href="mailto:info@lighthouse@gmail.com">info@lighthouse@gmail.com</Link>
 
                     </li>
                     <li><span className={styles['socail-footer']}>Address:</span>
-                      <a href="https://goo.gl/maps/oHERaj7mUFb1KemL8" target="_blank">    Abc,street, 009 Atlanta, GA </a>
+                      <Link href="https://goo.gl/maps/oHERaj7mUFb1KemL8" target="_blank">    Abc,street, 009 Atlanta, GA </Link>
 
                     </li>
                   </ul>
@@ -64,7 +65,7 @@ function Footer() {
           <div className="container">
             <div className="row">
               <div className="col-lg-10">
-                <p className={styles['copyright']}>© Copyright  2023 <a href="/" className={styles['fot-a']}>Lighthouse Services</a> All Rights Reserved. Designed &amp; Developed By Dallas Web Design Company <a href="https://www.appverticals.com/" target="_blank" className={styles['fot-a']}>App Verticals </a></p>
+                <p className={styles['copyright']}>© Copyright  2023 <Link href="/" className={styles['fot-a']}>Lighthouse Services</Link> All Rights Reserved. Designed &amp; Developed By Dallas Web Design Company <Link href="https://www.appverticals.com/" target="_blank" className={styles['fot-a']}>App Verticals </Link></p>
               </div>
               <div className="col-lg-2">
                 <div className={styles['social-icon-footer']}>
