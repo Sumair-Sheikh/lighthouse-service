@@ -1,6 +1,8 @@
 import Link from 'next/link';
+import Image from 'next/image'
 import styles from '../HomeAbout/HomeAbout.module.css'
 import HeadingLeft from '@/components/HeadingLeft/HeadingLeft';
+import { lazy } from 'react';
 
 
 function HomeAbout() {
@@ -10,7 +12,7 @@ function HomeAbout() {
                 <div className='row'>
                     <div className='col-md-6'>
                         <div className={styles['left-col']}>
-                            
+
                             <HeadingLeft toptitle="About" bottomtitle="Lighthouse Services" />
 
                             <div className={styles['content']}>
@@ -24,7 +26,14 @@ function HomeAbout() {
                     </div>
                     <div className='col-md-6'>
                         <div className={styles['about-light-img']}>
-                        <img src="/images/IMage-min-1.jpg" />
+                            <Image
+                                src="/images/IMage-min-1.jpg"
+                                alt=""
+                                width={566}
+                                height={550}
+                                loading='lazy'
+                            />
+
                         </div>
                     </div>
                 </div>

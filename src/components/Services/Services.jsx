@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react'
+import Image from 'next/image'
 import styles from './Services.module.css'
 import { tabsData } from '@/utils/tabs.data';
 
@@ -32,11 +33,24 @@ function Services() {
                                 <div className="col-md-6">
 
                                     <div className={styles['icon-box']}>
-                                        <img src={list.titleicon} alt="" />
+                                        <Image
+                                            src={list.titleicon}
+                                            alt=""
+                                            width={54}
+                                            height={54}
+                                            loading='lazy'
+                                        />
                                     </div>
 
                                     <div className={styles['image-col']}>
-                                        <img src={list.fimage} className={styles['first-img']} />
+                                        <Image
+                                            className={styles['first-img']}
+                                            src={list.fimage}
+                                            alt=""
+                                            width={566}
+                                            height={588}
+                                            loading='lazy'
+                                        />
                                     </div>
 
                                 </div>

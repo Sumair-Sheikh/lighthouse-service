@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react'
+import Image from 'next/image'
 import { blogList } from '@/utils/blogs.data';
 import { FaChevronRight } from "react-icons/fa";
 import styles from './Blogs.module.css'
@@ -6,7 +7,7 @@ import HeadingCenter from '../HeadingCenter/HeadingCenter';
 import { useRouter } from 'next/router';
 
 function Blogs() {
-    
+
     const router = useRouter()
     const pathName = router.pathname
     const handleChangePost = (e, id) => {
@@ -41,7 +42,13 @@ function Blogs() {
                                             <div className={styles['own-main-container']}>
 
                                                 <div className={styles['blog-img']}>
-                                                    <img src={list.image} />
+                                                    <Image
+                                                        src={list.image}
+                                                        alt=""
+                                                        width={355}
+                                                        height={291}
+                                                        loading='lazy'
+                                                    />
 
 
                                                     <div className={styles['date-location']}>

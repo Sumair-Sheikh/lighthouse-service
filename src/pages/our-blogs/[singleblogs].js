@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { useRouter } from 'next/router'
 import InnerBanner from '@/components/InnerBanner/InnerBanner'
+import Image from 'next/image'
 import style from '../../styles/ourblogs.module.css'
 import { blogList } from '@/utils/blogs.data';
 import FooterContact from '@/components/FooterContact/FooterContact';
@@ -33,7 +34,14 @@ function SingleBlog() {
                     <div className='row'>
                         <div className='col-md-12'>
                             <div className={style['blog-pic1']}>
-                                <img className={style['item-slick1']} src={blogDetails?.image} />
+                                <Image
+                                className={style['item-slick1']}
+                                    src={blogDetails?.image}
+                                    alt=""
+                                    width={1261}
+                                    height={481}
+                                    loading='lazy'
+                                />
                                 <div className={style['blog-date']}>
                                     <span>{blogDetails?.title}</span>
                                     <span className={style['post-date']}>{blogDetails?.date}</span>

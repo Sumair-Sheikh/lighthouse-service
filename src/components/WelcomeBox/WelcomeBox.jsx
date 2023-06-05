@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react'
+import Image from 'next/image'
 import styles from './WelcomeBox.module.css'
 
 function WelcomeBox() {
@@ -11,7 +12,13 @@ function WelcomeBox() {
                             <div className={styles['mission-inner']}>
                                 <div className={styles['img-title']}>
                                     <span>
-                                        <img src="/images/Vector-1.png" />
+                                        <Image
+                                            src="/images/Vector-1.png"
+                                            alt=""
+                                            width={35}
+                                            height={23}
+                                            loading='lazy'
+                                        />
                                     </span>
                                     <h4 className={styles['title']}>Our Vision</h4>
                                 </div>
@@ -27,7 +34,13 @@ function WelcomeBox() {
                             <div className={styles['mission-inner']}>
                                 <div className={styles['img-title']}>
                                     <span>
-                                        <img src="/images/Vector.png" />
+                                    <Image
+                                            src="/images/Vector.png"
+                                            alt=""
+                                            width={35}
+                                            height={23}
+                                            loading='lazy'
+                                        />
                                     </span>
                                     <h4 className={styles['title']}>Our Mission</h4>
                                 </div>
@@ -43,7 +56,13 @@ function WelcomeBox() {
                             <div className={styles['mission-inner']}>
                                 <div className={styles['img-title']}>
                                     <span>
-                                        <img src="/images/Group-1-1.png" />
+                                    <Image
+                                            src="/images/Vector-1.png"
+                                            alt=""
+                                            width={35}
+                                            height={23}
+                                            loading='lazy'
+                                        />
                                     </span>
                                     <h4 className={styles['title']}>Our Values</h4>
                                 </div>

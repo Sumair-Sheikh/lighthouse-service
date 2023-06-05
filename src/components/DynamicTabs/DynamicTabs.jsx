@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Image from 'next/image'
 import Link from 'next/link';
 import { tabsData } from '@/utils/tabs.data';
 import styles from './DynamicTabs.module.css'
@@ -25,7 +26,13 @@ const DynamicTabs = ({ tabsData }) => {
                             >
 
                                 <div className={styles['icon-box']}>
-                                    <img src={tab.titleicon} />
+                                    <Image
+                                        src={tab.titleicon}
+                                        alt=""
+                                        width={54}
+                                        height={54}
+                                        loading='lazy'
+                                    />
                                 </div>
                                 <span className={styles['title']}>{tab.title}</span>
 
@@ -47,9 +54,22 @@ const DynamicTabs = ({ tabsData }) => {
                                 <div className='row'>
                                     <div className='col-md-6'>
                                         <div className={styles['image-col']}>
-                                            <img src={tab.fimage} className={styles['first-img']} />
+                                            <Image
+                                                className={styles['first-img']}
+                                                src={tab.fimage}
+                                                alt=""
+                                                width={566}
+                                                height={550}
+                                                loading='lazy'
+                                            />
                                             <div className={styles['second-img']}>
-                                                <img src={tab.simage} />
+                                                <Image
+                                                    src={tab.simage}
+                                                    alt=""
+                                                    width={221}
+                                                    height={215}
+                                                    loading='lazy'
+                                                />
                                             </div>
                                         </div>
                                     </div>

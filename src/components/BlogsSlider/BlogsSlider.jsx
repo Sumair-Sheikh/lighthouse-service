@@ -1,6 +1,7 @@
 import HeadingCenter from '../HeadingCenter/HeadingCenter';
 import styles from './BlogsSlider.module.css'
 import React, { Fragment } from 'react'
+import Image from 'next/image'
 import Slider from "react-slick";
 import { blogList } from '@/utils/blogs.data';
 import { FaChevronRight } from "react-icons/fa";
@@ -54,7 +55,13 @@ function BlogsSlider() {
                                                 <div className={styles['Articles-page']}>
                                                     <div className={styles['own-main-container']}>
 
-                                                        <img src={list.image} />
+                                                        <Image
+                                                            src={list.image}
+                                                            alt=""
+                                                            width={355}
+                                                            height={291}
+                                                            loading='lazy'
+                                                        />
 
                                                         <div className={styles['date-location']}>
 

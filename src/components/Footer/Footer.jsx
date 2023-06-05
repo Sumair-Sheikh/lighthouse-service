@@ -23,7 +23,7 @@ function Footer() {
                       alt="Vercel Logo"
                       width={318}
                       height={318}
-                      priority
+                      loading='lazy'
                     />
                   </Link>
                 </div>

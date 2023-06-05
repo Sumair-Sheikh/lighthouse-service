@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react'
+import Image from 'next/image'
 import styles from './Contact.module.css'
 import HeadingLeft from '../HeadingLeft/HeadingLeft'
 import ContactFoam from '../ContactFoam/ContactFoam'
@@ -6,7 +7,7 @@ import ContactFoam from '../ContactFoam/ContactFoam'
 function Contact() {
     return (
         <Fragment>
-            
+
             <section className={styles['footer-contact']}>
 
                 <div className='container'>
@@ -17,8 +18,14 @@ function Contact() {
 
                             <div className={styles['left']}>
 
-                                <img src="/images/Images-and-shapes-min.png" />
-
+                                <Image
+                                    src="/images/Images-and-shapes-min.png"
+                                    alt=""
+                                    width={566}
+                                    height={588}
+                                    loading='lazy'
+                                />
+                                
                             </div>
 
                         </div>

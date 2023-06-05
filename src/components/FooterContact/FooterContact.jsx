@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react'
+import Image from 'next/image'
 import styles from './FooterContact.module.css'
 import HeadingLeft from '../HeadingLeft/HeadingLeft'
 import FooterFoam from '../FooterFoam/FooterFoam'
@@ -11,7 +12,13 @@ function FooterContact(props) {
                     <div className='row'>
                         <div className='col-md-6'>
                             <div className={styles['left']}>
-                                <img src={props.fimage || '/images/Images-and-shapes-min.png'} />
+                                <Image
+                                    src={props.fimage || '/images/Images-and-shapes-min.png'}
+                                    alt=""
+                                    width={566}
+                                    height={588}
+                                    loading='lazy'
+                                />
                             </div>
                         </div>
 
