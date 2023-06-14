@@ -44,122 +44,117 @@ function ContactFoam() {
           architectural: false,
           design: false,
         }}
-        // onSubmit={(values, { setSubmitting }) => {
-        //   setTimeout(() => {
-        //     alert(JSON.stringify(values, null, 2));
-        //     setSubmitting(false);
-        //   }, 400);
-        // }}
-        // onSubmit={handleSubmit(values)}
-
         onSubmit={async (values) => {
-          await new Promise((resolve) => setTimeout(resolve, 500));
-          alert(JSON.stringify(values, null, 3));
+          //await new Promise((resolve) => setTimeout(resolve, 500));
+          //alert(JSON.stringify(values, null, 3));
           handleSubmit(values);
         }}
       >
-        <Form>
-          <div className="row">
-            <div className="col-md-12">
-              <Field
-                name="name"
-                type="text"
-                placeholder="Name"
-                className={styles["fields"]}
-              />
-              <ErrorMessage name="name" component="div" />
+        {({ handleChange }) => (
+          <Form>
+            <div className="row">
+              <div className="col-md-12">
+                <Field
+                  name="name"
+                  type="text"
+                  placeholder="Name"
+                  className={styles["fields"]}
+                />
+                <ErrorMessage name="name" component="div" />
+              </div>
             </div>
-          </div>
 
-          <div className="row">
-            <div className="col-md-12">
-              <Field
-                name="email"
-                type="email"
-                placeholder="Email"
-                className={styles["fields"]}
-              />
-              <ErrorMessage name="email" component="div" />
+            <div className="row">
+              <div className="col-md-12">
+                <Field
+                  name="email"
+                  type="email"
+                  placeholder="Email"
+                  className={styles["fields"]}
+                />
+                <ErrorMessage name="email" component="div" />
+              </div>
             </div>
-          </div>
 
-          <div className="row">
-            <div className="col-md-12">
-              <Field
-                name="phone"
-                type="tel"
-                placeholder="Phone"
-                className={styles["fields"]}
-              />
+            <div className="row">
+              <div className="col-md-12">
+                <Field
+                  name="phone"
+                  type="tel"
+                  placeholder="Phone"
+                  className={styles["fields"]}
+                />
 
-              <ErrorMessage name="phone" component="div" />
+                <ErrorMessage name="phone" component="div" />
+              </div>
             </div>
-          </div>
 
-          <div className="row">
-            <div className="col-md-12">
-              <legend className={styles["legend"]}>
-                What type of Services you are looking for*:
-              </legend>
+            <div className="row">
+              <div className="col-md-12">
+                <legend className={styles["legend"]}>
+                  What type of Services you are looking for*:
+                </legend>
 
-              <div className={styles["checkbox"]}>
-                <div className={styles["gchoice"]}>
-                  <label>
-                    <Field name="engineering" type="checkbox" />
-                    Engineering
-                  </label>
-                </div>
+                <div className={styles["checkbox"]}>
+                  <div className={styles["gchoice"]}>
+                    <label>
+                      <Field name="engineering" type="checkbox" />
+                      Engineering
+                    </label>
+                  </div>
 
-                <div className={styles["gchoice"]}>
-                  <label>
-                    <Field name="maintenance" type="checkbox" />
-                    Maintenance
-                  </label>
-                </div>
+                  <div className={styles["gchoice"]}>
+                    <label>
+                      <Field name="maintenance" type="checkbox" />
+                      Maintenance
+                    </label>
+                  </div>
 
-                <div className={styles["gchoice"]}>
-                  <label>
-                    <Field name="printedsigns" type="checkbox" />
-                    3D printed signs
-                  </label>
-                </div>
+                  <div className={styles["gchoice"]}>
+                    <label>
+                      <Field name="printedsigns" type="checkbox" />
+                      3D printed signs
+                    </label>
+                  </div>
 
-                <div className={styles["gchoice"]}>
-                  <label>
-                    <Field name="architectural" type="checkbox" />
-                    Architectural Signage
-                  </label>
-                </div>
+                  <div className={styles["gchoice"]}>
+                    <label>
+                      <Field name="architectural" type="checkbox" />
+                      Architectural Signage
+                    </label>
+                  </div>
 
-                <div className={styles["gchoice"]}>
-                  <label>
-                    <Field name="design" type="checkbox" />
-                    Design Assist
-                  </label>
+                  <div className={styles["gchoice"]}>
+                    <label>
+                      <Field name="design" type="checkbox" />
+                      Design Assist
+                    </label>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <div className="row">
-            <div className="col-md-12">
-              <textarea
-                id="message"
-                name="message"
-                placeholder="Message"
-                className={`${styles["fields-msg"]} ${styles["fields"]}`}
-              />
-              <ErrorMessage name="message" component="div" />
+            <div className="row">
+              <div className="col-md-12">
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Message"
+                  onChange={handleChange}
+                  className={`${styles["fields-msg"]} ${styles["fields"]}`}
+                />
+                <ErrorMessage name="message" component="div" />
+              </div>
             </div>
-          </div>
 
-          <button
-            type="submit"
-            className={`${styles["foam-btn"]} ${styles["pulse-animation"]}`}
-          >
-            Send
-          </button>
-        </Form>
+            <button
+              type="submit"
+              className={`${styles["foam-btn"]} ${styles["pulse-animation"]}`}
+            >
+              Send
+            </button>
+          </Form>
+        )}
       </Formik>
     </Fragment>
   );

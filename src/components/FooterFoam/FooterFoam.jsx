@@ -40,63 +40,66 @@ function FooterFoam() {
           handleSubmit(values);
         }}
       >
-        <Form>
-          <div className="row">
-            <div className="col-md-12">
-              <Field
-                name="name"
-                type="text"
-                placeholder="Name"
-                className={styles["fields"]}
-              />
-              <ErrorMessage name="name" component="div" />
+        {({ handleChange }) => (
+          <Form>
+            <div className="row">
+              <div className="col-md-12">
+                <Field
+                  name="name"
+                  type="text"
+                  placeholder="Name"
+                  className={styles["fields"]}
+                />
+                <ErrorMessage name="name" component="div" />
+              </div>
             </div>
-          </div>
 
-          <div className="row">
-            <div className="col-md-12">
-              <Field
-                name="email"
-                type="email"
-                placeholder="Email"
-                className={styles["fields"]}
-              />
-              <ErrorMessage name="email" component="div" />
+            <div className="row">
+              <div className="col-md-12">
+                <Field
+                  name="email"
+                  type="email"
+                  placeholder="Email"
+                  className={styles["fields"]}
+                />
+                <ErrorMessage name="email" component="div" />
+              </div>
             </div>
-          </div>
 
-          <div className="row">
-            <div className="col-md-12">
-              <Field
-                name="phone"
-                type="tel"
-                placeholder="Phone"
-                className={styles["fields"]}
-              />
-              <ErrorMessage name="phone" component="div" />
+            <div className="row">
+              <div className="col-md-12">
+                <Field
+                  name="phone"
+                  type="tel"
+                  placeholder="Phone"
+                  className={styles["fields"]}
+                />
+                <ErrorMessage name="phone" component="div" />
+              </div>
             </div>
-          </div>
 
-          <div className="row">
-            <div className="col-md-12">
-              <textarea
-                name="message"
-                id=""
-                cols="30"
-                rows="5"
-                placeholder="Message"
-                className={`${styles["fields-msg"]} ${styles["fields"]}`}
-              ></textarea>
+            <div className="row">
+              <div className="col-md-12">
+                <textarea
+                  name="message"
+                  id=""
+                  cols="30"
+                  rows="5"
+                  placeholder="Message"
+                  onChange={handleChange}
+                  className={`${styles["fields-msg"]} ${styles["fields"]}`}
+                ></textarea>
+              </div>
             </div>
-          </div>
 
-          <button
-            type="submit"
-            className={`${styles["foam-btn"]} ${styles["pulse-animation"]}`}
-          >
-            Send
-          </button>
-        </Form>
+            <button
+              type="submit"
+              className={`${styles["foam-btn"]} ${styles["pulse-animation"]}`}
+            >
+              Send
+            </button>
+          </Form>
+        )}
       </Formik>
     </Fragment>
   );
